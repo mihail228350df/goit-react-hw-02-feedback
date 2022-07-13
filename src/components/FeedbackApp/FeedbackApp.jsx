@@ -34,11 +34,7 @@ export default class FeedbackApp extends Component {
     return procentPositiveFeedback;
   };
 
-  options = () => {
-    const options = this.state;
-    const optionsArray = Object.keys(options);
-    return optionsArray;
-  };
+  options = () => Object.keys(this.state.options);
 
   render() {
     const { good, neutral, bad } = this.state;
